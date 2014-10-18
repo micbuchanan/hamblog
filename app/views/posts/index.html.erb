@@ -1,0 +1,5 @@
+<h1>Hamblog</h1>
+<% @posts.each do |post| %>
+	<h3><%= post.title %></h3>
+	<p><%= link_to "Read me", post_path(post) %></p>
+<% end %>
